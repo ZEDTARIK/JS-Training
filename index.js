@@ -1,10 +1,12 @@
-const array = [1, 6, 10, 500, 4];
+var str = 'Hello World';
+var array = str.split('');
 
-for (let index = 0; index < array.length; index++) {
+for (let index = 0; index < str.length; index++) {
     
-    if(array[index] === 500)  break; 
-    //if(array[index] === 500)  continue; 
-    array[index] = array[index]  - 1;
+    if(array[index] === array[index].toUpperCase()) {
+        array[index] = array[index].toLowerCase();
+    }
 }
+console.table(array.join(''));
 
-console.table(array);
+
