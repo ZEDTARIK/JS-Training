@@ -1,12 +1,12 @@
-var str = 'Hello World';
-var array = str.split('');
-
-for (let index = 0; index < str.length; index++) {
-    
-    if(array[index] === array[index].toUpperCase()) {
-        array[index] = array[index].toLowerCase();
+function LettreCApitalize(str)  {
+    var array = str.split(" ");
+    for (let index = 0; index < array.length; index++)  {
+        array[index] = array[index].substr(0, 1).toUpperCase() + array[index].substr(1);
     }
-}
-console.table(array.join(''));
 
+    return array.join(" ");
+}
+
+let str = LettreCApitalize("zouhair ettarak");
+console.log(str);
 
