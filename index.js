@@ -1,12 +1,7 @@
-function LettreCApitalize(str)  {
-    var array = str.split(" ");
-    for (let index = 0; index < array.length; index++)  {
-        array[index] = array[index].substr(0, 1).toUpperCase() + array[index].substr(1);
-    }
+var array = [1, 'str', true, 451, [62, 1, 96]];
 
-    return array.join(" ");
-}
+// console.log(array.length); // 5 
+array.push(6); // add 
+array.reverse();
 
-let str = LettreCApitalize("zouhair ettarak");
-console.log(str);
-
+console.log(array);
