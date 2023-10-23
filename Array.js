@@ -4,4 +4,4 @@ var array = [1, 'str', true, 451, [62, 1, 96]];
 array.push(6); // add 
 array.reverse();
 
-console.log(array);
+console.table(array);
